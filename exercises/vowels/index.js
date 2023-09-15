@@ -7,6 +7,10 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {}
+//solution 1 - using regular expressions
+function vowels(str) {
+    // return str.replace(/[^AEIOU,aeiou]/g, '').length;
+    return str.replace(/[^aeiou]/gi, '').length;
+}
 
 module.exports = vowels;
